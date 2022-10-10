@@ -10,7 +10,7 @@
  body {
    background-image: linear-gradient(to bottom, #fff1b0, #e6df9e, #cecd8c, #b6bb7b, #9ea96b, #879c65, #728e60, #5e805a, #4c715a, #416256, #3b524e, #394242);
    color: #fff;
-   background: #222;
+   background: rgb(192, 186, 186);
    font-family: "Poppins", sans-serif;
    font-size: 1.3em;
    font-weight: 900;
@@ -28,9 +28,12 @@
  }
 
  .content {
+   text-align: center;
    width: 78%;
-   margin: 0px auto;
-   padding: 100px;
+   /* margin: auto auto; */
+   margin-left: auto;
+   margin-right: auto;
+   padding: 50px;
 
    @media only screen and (max-width: 800px) {
      width: 100%;
@@ -45,7 +48,7 @@
    align-items: center;
    background: #ddd;
    min-height: 40vh;
-   color: #222;
+   color: rgb(192, 186, 186);
 
    @media only screen and (max-width: 800px) {
      h1 {
