@@ -8,13 +8,23 @@ const CustomCard = (props) => {
   return (
     <>
       <Card
-        bodyStyle={{ padding: "10px" }}
+        bordered
+        bodyStyle={{ padding: "10px", border: "1px solid" }}
         onClick={() => {
           window.open(url, "_blank", "noopener,noreferrer");
         }}
         hoverable
-        style={{ width: 200, textAlign: "center" }}
-        cover={<img alt="example" src={cover} style={coverStyle} />}
+        style={{ width: 150, textAlign: "center" }}
+        cover={
+          <img
+            alt="example"
+            src={cover}
+            style={{
+              backgroundColor: coverStyle ? coverStyle : "rgb(192, 186, 186)",
+              padding: 10,
+            }}
+          />
+        }
       >
         <Meta style={{ display: "inline" }} title={title} />
       </Card>
