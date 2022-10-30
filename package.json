@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "port": 8080,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
@@ -26,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:local": "env-cmd -f env/.env.local npm run-script start"
+    "local": "env-cmd -f /portfolio/.env.local npm run-script start"
   },
   "eslintConfig": {
     "extends": [
