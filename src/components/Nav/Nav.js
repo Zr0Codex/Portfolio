@@ -9,6 +9,8 @@ const Nav = () => {
     setToggle(toggle === false ? true : false);
   };
 
+  // navigation bar UI activities //
+
   return (
     <>
       <header>
